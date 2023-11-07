@@ -1,6 +1,13 @@
-function Products() {
+import { useParams } from "react-router-dom";
+
+export function Products({
+    isFav = false,
+    isCat = false
+}) {
+    const { name } = useParams()
     return <>
-        <h1>Main</h1>
+        {isFav && <h1>Favorite products</h1>}
+        {isCat && <h1>Category Page "{name}"</h1>}
+        {!isFav && !isCat && <h1>Catalog</h1>}
     </>
 }
-export default Products;

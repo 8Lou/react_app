@@ -1,6 +1,5 @@
-function Delivery() {
+export function Delivery() {
     return <>
-        <h1>Main</h1>
+        <h1>Delivery</h1>
     </>
 }
-export default Delivery;

@@ -1,6 +1,5 @@
-function Profile() {
+export function Profile() {
     return <>
-        <h1>Main</h1>
+        <h1>Profile</h1>
     </>
 }
-export default Profile;

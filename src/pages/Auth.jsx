@@ -1,6 +1,5 @@
-function Auth() {
+export function Auth() {
     return <>
-        <h1>Main</h1>
+        <h1>Authorisation</h1>
     </>
 }
-export default Auth;

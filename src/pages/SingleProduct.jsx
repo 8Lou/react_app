@@ -1,6 +1,5 @@
-function SingleProduct() {
+export function SingleProduct() {
     return <>
-        <h1>Main</h1>
+        <h1>The product</h1>
     </>
 }
-export default SingleProduct;

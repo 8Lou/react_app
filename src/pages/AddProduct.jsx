@@ -1,6 +1,5 @@
-function AddProduct() {
+export function AddProduct() {
     return <>
-        <h1>Main</h1>
+        <h1>Add product</h1>
     </>
 }
-export default AddProduct;
