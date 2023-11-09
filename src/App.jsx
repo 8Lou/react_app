@@ -22,11 +22,11 @@ function App() {
         <ul><li>
           <Link to='/products/category/food'>Food</Link>
         </li>
-        <li>
-            <Link to='/products/category/toys'>Toys</Link>
-        </li>
           <li>
-            <Link to='/products/favorites'>Favorite</Link>
+            <Link to='/products/category/toys'>Toys</Link>
+          </li>
+          <li>
+            <Link to='/products/favorites'>Favorites</Link>
           </li>
         </ul>
       </li>
@@ -65,7 +65,7 @@ function App() {
       <Route path="/delivery" element={<Delivery />} />
       <Route path="/about" element={<About />} />
     </Routes>
-  </>;
+  </>
 }
 
 export default App;
