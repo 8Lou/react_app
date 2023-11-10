@@ -1,9 +1,7 @@
 import "./index.css";
 
 import { Link } from "react-router-dom"
-// import { Corgi } from "../../assets/img";
-
-import "./index.css";
+import { Corgi } from "../../assets/img";
 
 const Adds = ({
     name,
@@ -12,7 +10,7 @@ const Adds = ({
     tag
 }) => {
     const imgStyle = {
-        // backgroundImage: `url(${Corgi[img]})`
+        backgroundImage: `url(${Corgi[img]})`
     }
 
     return <div className="adds">

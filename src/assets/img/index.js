@@ -1,7 +1,7 @@
 import Banners from "./banners";
-// import Corgi from "./corgi";
+import Corgi from "./corgi";
 
 export {
     Banners,
-    // Corgi
+    Corgi
 };

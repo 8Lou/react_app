@@ -4,9 +4,11 @@ import "./index.css";
 const Layout = ({
     mb = 1,
     dt = mb,
-    gap = "normal",
+    gap = "normal", // none=0 | small = 2rem | normal = 4rem
+    fullHeight = false,
     title,
-    children }) => {
+    children
+}) => {
     let className = "layout";
     switch (mb) {
         case 2: className += "layout_2"; break;
@@ -15,10 +17,10 @@ const Layout = ({
         default: className += "";
     }
     switch (dt) {
-        case 1: className += "layout_dt-1"; break;
-        case 2: className += "layout_dt-2"; break;
-        case 3: className += "layout_dt-3"; break;
-        case 4: className += "layout_dt-4"; break;
+        case 1: className += " layout_dt-1"; break;
+        case 2: className += " layout_dt-2"; break;
+        case 3: className += " layout_dt-3"; break;
+        case 4: className += " layout_dt-4"; break;
         default: className += "";
     }
     switch (gap) {
@@ -26,7 +28,11 @@ const Layout = ({
         case "small": className += "layout_gap-small"; break;
         default: className += "";
     }
+    if (fullHeight) {
+        className += " layout_h-100"
+    }
     return <div className={className}>
+        {title && <h2 className={`layout__title layout__title_${mb} layout__title_dt-${dt}`}>{title}</h2>}
         {children}
     </div>
 }
