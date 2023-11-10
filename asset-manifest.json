@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/react_app/static/css/main.188ed883.css",
-    "main.js": "/react_app/static/js/main.1b3d06e9.js",
+    "main.css": "/react_app/static/css/main.559ae76b.css",
+    "main.js": "/react_app/static/js/main.572f7ff9.js",
+    "static/media/corgi4.png": "/react_app/static/media/corgi4.4a1bffa341d28ed9079e.png",
     "static/media/puppy.jpg": "/react_app/static/media/puppy.1cb4dbd5f9da257f54a0.jpg",
+    "static/media/corgi1.png": "/react_app/static/media/corgi1.f424d010a63550997132.png",
     "static/media/arrows.jpg": "/react_app/static/media/arrows.f288b1db1650675d7a71.jpg",
+    "static/media/corgi2.png": "/react_app/static/media/corgi2.f288a4b33729dc14d5ff.png",
     "static/media/paws.jpg": "/react_app/static/media/paws.28fff6b2b8f689f61882.jpg",
     "index.html": "/react_app/index.html",
-    "main.188ed883.css.map": "/react_app/static/css/main.188ed883.css.map",
-    "main.1b3d06e9.js.map": "/react_app/static/js/main.1b3d06e9.js.map"
+    "main.559ae76b.css.map": "/react_app/static/css/main.559ae76b.css.map",
+    "main.572f7ff9.js.map": "/react_app/static/js/main.572f7ff9.js.map"
   },
   "entrypoints": [
-    "static/css/main.188ed883.css",
-    "static/js/main.1b3d06e9.js"
+    "static/css/main.559ae76b.css",
+    "static/js/main.572f7ff9.js"
   ]
 }
