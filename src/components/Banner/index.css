@@ -5,6 +5,8 @@
     max-height: 60vh;
     display: grid;
     align-content: flex-end;
+    color: rgb(6, 6, 85);
+    text-shadow: 0 0 2rem rgb(171, 226, 236);
 }
 .banner__caption {
     font-size: 6rem;
@@ -20,8 +22,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #c0c0c0;
-    opacity: .4;
+    /* background-color: #10173f;     */
+    opacity: .3;
 }
 
 @media screen and (min-width: 1064px) {

@@ -6,10 +6,11 @@ body {
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
+    color: rgb(6, 6, 85);
 }
 a {
     text-decoration: none;
-    color: inherit;
+    /* color: inherit; */
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -22,6 +23,7 @@ ul {
 .menu {    
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .menu>li {
     position: relative;
