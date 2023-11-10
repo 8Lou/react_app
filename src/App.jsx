@@ -11,9 +11,15 @@ import {
   SingleProduct
 } from './pages'
 import Layout from "./components/Layout";
+import Main from "./context/main";
+import { useState } from "react";
 
 function App() {
-  return <>
+
+  const [news, setNews] = useState();
+  const mainCtx = {}
+
+  return <Main.Provider value={mainCtx}>
     <Layout>
 
       <ul className="menu">
@@ -33,6 +39,7 @@ function App() {
         <li>          <Link to='/products/delivery'>Delivery</Link>        </li>
         <li>          <Link to='/products/about'>About us</Link>        </li>
       </ul>
+      <span>{process.env.REACT_APP_USER_NAME}</span>
     </Layout>
     <Routes>
       <Route path="/" element={<Home />} />
@@ -47,7 +54,7 @@ function App() {
       <Route path="/delivery" element={<Delivery />} />
       <Route path="/about" element={<About />} />
     </Routes>
-  </>
+  </Main.Provider>
 }
 
 export default App;

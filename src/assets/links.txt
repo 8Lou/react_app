@@ -1,0 +1,38 @@
+Ссылка на документацию CRA
+https://create-react-app.dev/
+
+Запустить проект на GithubPages
+https://create-react-app.dev/docs/deployment
+
+Картинки jpg
+https://unsplash.com/
+
+Картинки (10шт / день)
+https://www.freepik.com/
+
+Иконки png (10 | 50 / день)
+https://www.flaticon.com/
+
+Корги
+https://www.flaticon.com/free-sticker/corgi_7603390?related_id=7603390&origin=search
+
+Новости
+https://newsapi.org/
+    Что можно посмотреть:
+        Techinsider.ru
+        Life.ru
+        Picabu
+        Lenta.ru
+
+9621741646@mail.ru - 123321Qq
+API key is: 7a456e5664f14920b9b3a8a09c9f3094
+
+API
+https://api.react-learning.ru/api-docs/
+Старое API
+https://nutritious-windflower-27f.notion.site/API-f359059dee014b448955eab8c5b13062
+
+Векторные иконки
+https://www.npmjs.com/package/simple-line-icons
+https://www.npmjs.com/package/lineicons
+https://lineicons.com/icons/
