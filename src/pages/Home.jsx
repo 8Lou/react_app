@@ -1,10 +1,10 @@
-import Layout from "../components/Layout"
+
+import Banner from "../components/Banner";
+
+import bannersData from "../assets/data/banners.json";
 
 export function Home() {
     return <>
-        <h1>Main</h1>
-        <Layout mb={1} dt={2} gap="small" />
-        <Layout mb={4} dt={4} gap="none" />
-        <Layout mb={2} dt={3} />
+        <Banner {...bannersData[0]} pattern={false} bgPos="70% 40%" />
     </>
 }

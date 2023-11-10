@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../Card";
 import "./index.css";
 
 const Layout = ({
@@ -28,14 +27,7 @@ const Layout = ({
         default: className += "";
     }
     return <div className={className}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {children}
     </div>
 }
 

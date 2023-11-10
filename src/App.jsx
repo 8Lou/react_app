@@ -10,48 +10,52 @@ import {
   Profile,
   SingleProduct
 } from './pages'
+import Layout from "./components/Layout";
 
 function App() {
   return <>
-    <ul className="menu">
-      <li>
-        <Link to='/'>Main</Link>
-      </li>
-      <li>
-        <Link to='/products'>Catalog</Link>
-        <ul><li>
-          <Link to='/products/category/food'>Food</Link>
+    <Layout>
+
+      <ul className="menu">
+        <li>
+          <Link to='/'>Main</Link>
         </li>
-          <li>
-            <Link to='/products/category/toys'>Toys</Link>
+        <li>
+          <Link to='/products'>Catalog</Link>
+          <ul><li>
+            <Link to='/products/category/food'>Food</Link>
           </li>
-          <li>
-            <Link to='/products/favorites'>Favorites</Link>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <Link to='/products/ball'>Ball</Link>
-      </li>
-      <li>
-        <Link to='/products/add'>Add product</Link>
-      </li>
-      <li>
-        <Link to='/products/basket'>Basket</Link>
-      </li>
-      <li>
-        <Link to='/products/profile'>Profile</Link>
-      </li>
-      <li>
-        <Link to='/products/auth'>Authorisation</Link>
-      </li>
-      <li>
-        <Link to='/products/delivery'>Delivery</Link>
-      </li>
-      <li>
-        <Link to='/products/about'>About us</Link>
-      </li>
-    </ul>
+            <li>
+              <Link to='/products/category/toys'>Toys</Link>
+            </li>
+            <li>
+              <Link to='/products/favorites'>Favorites</Link>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <Link to='/products/ball'>Ball</Link>
+        </li>
+        <li>
+          <Link to='/products/add'>Add product</Link>
+        </li>
+        <li>
+          <Link to='/products/basket'>Basket</Link>
+        </li>
+        <li>
+          <Link to='/products/profile'>Profile</Link>
+        </li>
+        <li>
+          <Link to='/products/auth'>Authorisation</Link>
+        </li>
+        <li>
+          <Link to='/products/delivery'>Delivery</Link>
+        </li>
+        <li>
+          <Link to='/products/about'>About us</Link>
+        </li>
+      </ul>
+    </Layout>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
