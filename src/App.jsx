@@ -12,14 +12,41 @@ import {
 } from './pages'
 import Layout from "./components/Layout";
 import Main from "./context/main";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
 
-  const [news, setNews] = useState();
-  const mainCtx = {}
+  const [news, setNews] = useState([]);
+  const [newsLenta, setNewsLenta] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://newsapi.org/v2/everything?q=beer&apiKey=${'7a456e5664f14920b9b3a8a09c9f3094'}`)
+      .then(res => res.json())
+      .then(data => {
+        setNews(data.articles.filter(el => el.source.name === "businessinsider.com"));
+        // sessionStorage.setItem("abc - news", JSON.stringify(result));
+        // setNews(result);
+      })
+    fetch(`https://newsapi.org/v2/everything?q=beer&sources=lenta&apiKey=${'7a456e5664f14920b9b3a8a09c9f3094'}`)
+      .then(res => res.json())
+      .then(data => {
+        setNewsLenta(data.articles);
+      })
+
+  }, [])
+
+  const mainCtx = {
+    news,
+    newsLenta
+  }
 
   return <Main.Provider value={mainCtx}>
+
+    {news.length > 0 && news.map(el => <div key={el.url}>
+      <h2>{el.source.id} {el.source.name}</h2>
+      <img src={el.urlToImage} alt="" />
+    </div>)}
+
     <Layout>
 
       <ul className="menu">
