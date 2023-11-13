@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react_app/static/css/main.aa8f31e9.css",
+    "main.css": "/react_app/static/css/main.854864c4.css",
     "main.js": "/react_app/static/js/main.c5518359.js",
     "static/media/corgi4.png": "/react_app/static/media/corgi4.4a1bffa341d28ed9079e.png",
     "static/media/puppy.jpg": "/react_app/static/media/puppy.1cb4dbd5f9da257f54a0.jpg",
@@ -9,11 +9,11 @@
     "static/media/corgi2.png": "/react_app/static/media/corgi2.f288a4b33729dc14d5ff.png",
     "static/media/paws.jpg": "/react_app/static/media/paws.28fff6b2b8f689f61882.jpg",
     "index.html": "/react_app/index.html",
-    "main.aa8f31e9.css.map": "/react_app/static/css/main.aa8f31e9.css.map",
+    "main.854864c4.css.map": "/react_app/static/css/main.854864c4.css.map",
     "main.c5518359.js.map": "/react_app/static/js/main.c5518359.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa8f31e9.css",
+    "static/css/main.854864c4.css",
     "static/js/main.c5518359.js"
   ]
 }
