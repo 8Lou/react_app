@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_app/static/css/main.854864c4.css",
-    "main.js": "/react_app/static/js/main.52a2c4d9.js",
+    "main.css": "/react_app/static/css/main.aa8f31e9.css",
+    "main.js": "/react_app/static/js/main.662c2fa3.js",
     "static/media/corgi4.png": "/react_app/static/media/corgi4.4a1bffa341d28ed9079e.png",
     "static/media/puppy.jpg": "/react_app/static/media/puppy.1cb4dbd5f9da257f54a0.jpg",
     "static/media/corgi1.png": "/react_app/static/media/corgi1.f424d010a63550997132.png",
@@ -9,11 +9,11 @@
     "static/media/corgi2.png": "/react_app/static/media/corgi2.f288a4b33729dc14d5ff.png",
     "static/media/paws.jpg": "/react_app/static/media/paws.28fff6b2b8f689f61882.jpg",
     "index.html": "/react_app/index.html",
-    "main.854864c4.css.map": "/react_app/static/css/main.854864c4.css.map",
-    "main.52a2c4d9.js.map": "/react_app/static/js/main.52a2c4d9.js.map"
+    "main.aa8f31e9.css.map": "/react_app/static/css/main.aa8f31e9.css.map",
+    "main.662c2fa3.js.map": "/react_app/static/js/main.662c2fa3.js.map"
   },
   "entrypoints": [
-    "static/css/main.854864c4.css",
-    "static/js/main.52a2c4d9.js"
+    "static/css/main.aa8f31e9.css",
+    "static/js/main.662c2fa3.js"
   ]
 }
