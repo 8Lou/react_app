@@ -23,9 +23,10 @@ function App() {
     fetch(`https://newsapi.org/v2/everything?q=beer&apiKey=${'7a456e5664f14920b9b3a8a09c9f3094'}`)
       .then(res => res.json())
       .then(data => {
-        setNews(data.articles.filter(el => el.source.name === "businessinsider.com"));
+        setNews(data.articles.filter(el => el.source.name === "Lifehacker.com"));
         // sessionStorage.setItem("abc - news", JSON.stringify(result));
         // setNews(result);
+        console.log(data)
       })
     fetch(`https://newsapi.org/v2/everything?q=beer&sources=lenta&apiKey=${'7a456e5664f14920b9b3a8a09c9f3094'}`)
       .then(res => res.json())
@@ -41,11 +42,6 @@ function App() {
   }
 
   return <Main.Provider value={mainCtx}>
-
-    {news.length > 0 && news.map(el => <div key={el.url}>
-      <h2>{el.source.id} {el.source.name}</h2>
-      <img src={el.urlToImage} alt="" />
-    </div>)}
 
     <Layout>
 
