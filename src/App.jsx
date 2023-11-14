@@ -19,23 +19,6 @@ function App() {
   const [news, setNews] = useState([]);
   const [newsLenta, setNewsLenta] = useState([]);
 
-  useEffect(() => {
-    fetch(`https://newsapi.org/v2/everything?q=beer&apiKey=${'7a456e5664f14920b9b3a8a09c9f3094'}`)
-      .then(res => res.json())
-      .then(data => {
-        setNews(data.articles.filter(el => el.source.name === "Lifehacker.com"));
-        // sessionStorage.setItem("abc - news", JSON.stringify(result));
-        // setNews(result);
-        console.log(data)
-      })
-    fetch(`https://newsapi.org/v2/everything?q=beer&sources=lenta&apiKey=${'7a456e5664f14920b9b3a8a09c9f3094'}`)
-      .then(res => res.json())
-      .then(data => {
-        setNewsLenta(data.articles);
-      })
-
-  }, [])
-
   const mainCtx = {
     news,
     newsLenta
