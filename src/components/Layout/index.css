@@ -32,7 +32,7 @@
     align-content: stretch;
 }
 .layout__title {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .layout__title_2 {
     grid-column: 1 / span 2;

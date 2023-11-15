@@ -6,7 +6,7 @@
     display: grid;
     align-content: flex-end;
     color: rgb(6, 6, 85);
-    text-shadow: 0 0 2rem rgb(244, 231, 162);
+    text-shadow: 0 0 2rem rgb(248, 244, 189);
 }
 .banner__caption {
     font-size: 6rem;

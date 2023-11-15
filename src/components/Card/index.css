@@ -1,4 +1,5 @@
 .card {
     min-height: 100px;
-    background-color: silver;
+    background-color: lightsteelblue;
+    border-radius: 1rem;
 }

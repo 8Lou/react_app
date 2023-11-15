@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./index.css";
 
 const Layout = ({
@@ -11,9 +12,9 @@ const Layout = ({
 }) => {
     let className = "layout";
     switch (mb) {
-        case 2: className += "layout_2"; break;
-        case 3: className += "layout_3"; break;
-        case 4: className += "layout_4"; break;
+        case 2: className += " layout_2"; break;
+        case 3: className += " layout_3"; break;
+        case 4: className += " layout_4"; break;
         default: className += "";
     }
     switch (dt) {
@@ -24,8 +25,8 @@ const Layout = ({
         default: className += "";
     }
     switch (gap) {
-        case "none": className += "layout_gap-none"; break;
-        case "small": className += "layout_gap-small"; break;
+        case "none": className += " layout_gap-none"; break;
+        case "small": className += " layout_gap-small"; break;
         default: className += "";
     }
     if (fullHeight) {

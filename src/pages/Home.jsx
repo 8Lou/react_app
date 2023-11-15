@@ -8,22 +8,39 @@ import MainCtx from "../context/main";
 import { useContext } from "react";
 import Carousel from "../components/Carousel";
 import Card from "../components/Card";
+import goodsData from "../assets/data/goods.json";
 
 export function Home() {
-    const { news, newsLenta } = useContext(MainCtx);
+    const { newsLenta } = useContext(MainCtx);
     return <>
-        <Banner {...bannersData[0]} pattern={false} bgPos="70% 40%" />
+        <Banner {...bannersData[2]} pattern={false} bgPos="70% 40%" />
 
         <Layout>
             <Adds {...addsData[0]} />
         </Layout>
+
+        {goodsData.length > 0 && <Layout mb={2} dt={4} title='New'>
+            {goodsData.map(el => <Card key={el._id} {...el} />)}
+        </Layout>}
 
         <Layout dt={2}>
             <Adds {...addsData[1]} />
             <Adds {...addsData[2]} />
         </Layout>
 
-        <Layout mb={1} dt={2} title="Новости Lenta.ru">
+        {goodsData.length > 0 && <Layout mb={2} dt={4} title='Popular'>
+            {goodsData.map(el => <Card key={el._id} {...el} />)}
+        </Layout>}
+
+        <Layout>
+            <Adds {...addsData[6]} />
+        </Layout>
+
+        {goodsData.length > 0 && <Layout mb={2} dt={4} title='Viewed'>
+            {goodsData.map(el => <Card key={el._id} {...el} />)}
+        </Layout>}
+
+        <Layout mb={1} dt={2} title="Lenta.ru News">
 
             {newsLenta.length > 0 &&
                 <Carousel
