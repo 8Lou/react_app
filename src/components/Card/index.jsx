@@ -21,15 +21,26 @@ const Card = ({
         backgroundImage: `url(${pictures})`
     }
 
+
+
+
     return <Link className="card" to={`/product/${_id}`} >
-        {tag && <button className={`card__tag card__tag_${tag}`}>{tag}</button>}
+        {tag && <button
+            className={`card__btn card__tag card__tag_${tag}`}
+
+        >{tag}</button>}
+
         <span className="card__img" style={imgStyle}></span>
-        <span className="card__content"></span>
-        <span className="card__title">{name}</span>
-        <span className="card__rate">{reviews.length}</span>
-        <span className="card__price">{price}</span>
-        <button>Buy</button>
-        <button>Like</button>
+        <span className="card__content">
+
+            <span className="card__title">{name}</span>
+            <span className="card__rate">{reviews.length}</span>
+            <span className="card__price">{price}</span>
+            <span className="card__buttons">
+                <button className='card__btn card__btn_basket'>Buy</button>
+                <button className='card__btn'>Like</button>
+            </span>
+        </span>
     </Link>
 }
 
