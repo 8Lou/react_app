@@ -1,7 +1,12 @@
 {
   "files": {
-    "main.css": "/react_app/static/css/main.bb3270e3.css",
-    "main.js": "/react_app/static/js/main.d8c4f936.js",
+    "main.css": "/react_app/static/css/main.d864dbbb.css",
+    "main.js": "/react_app/static/js/main.aab1a42d.js",
+    "static/media/lineicons.svg": "/react_app/static/media/lineicons.f2f9b8a78db58f05b9ff.svg",
+    "static/media/lineicons.eot": "/react_app/static/media/lineicons.1bd27d861dcb216e6148.eot",
+    "static/media/lineicons.ttf": "/react_app/static/media/lineicons.76255d9384a33a768b98.ttf",
+    "static/media/lineicons.woff": "/react_app/static/media/lineicons.409f9fb975c5f7f1bc8b.woff",
+    "static/media/lineicons.woff2": "/react_app/static/media/lineicons.02810d8aed105f6dd345.woff2",
     "static/media/corgi4.png": "/react_app/static/media/corgi4.4a1bffa341d28ed9079e.png",
     "static/media/puppy.jpg": "/react_app/static/media/puppy.1cb4dbd5f9da257f54a0.jpg",
     "static/media/corgi7.png": "/react_app/static/media/corgi7.f6fa73b6ada08118cf75.png",
@@ -11,11 +16,11 @@
     "static/media/corgi2.png": "/react_app/static/media/corgi2.f288a4b33729dc14d5ff.png",
     "static/media/paws.jpg": "/react_app/static/media/paws.28fff6b2b8f689f61882.jpg",
     "index.html": "/react_app/index.html",
-    "main.bb3270e3.css.map": "/react_app/static/css/main.bb3270e3.css.map",
-    "main.d8c4f936.js.map": "/react_app/static/js/main.d8c4f936.js.map"
+    "main.d864dbbb.css.map": "/react_app/static/css/main.d864dbbb.css.map",
+    "main.aab1a42d.js.map": "/react_app/static/js/main.aab1a42d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb3270e3.css",
-    "static/js/main.d8c4f936.js"
+    "static/css/main.d864dbbb.css",
+    "static/js/main.aab1a42d.js"
   ]
 }
