@@ -52,8 +52,37 @@ const Card = ({
         <span className="card__content">
 
             <span className="card__title">{name}</span>
-            <span className="card__rate">{reviews.length}</span>
-            <span className="card__price">{price}</span>
+
+
+            <span className="card__info">
+                {reviews.length
+                    ? <span className="card__rate">
+                        <i className="lni lni-star-fill" />
+                        {(reviews.reduce((acc, el) => acc + el.rating, 0) / reviews.length).toFixed(1)}
+                    </span>
+                    : <span className="card__rate card__rate_empty">
+                        <i className="lni lni-star-fill" />
+                    </span>
+                }
+
+
+                <span className="card__review">
+                    {reviews.length > 0
+                        ? `${reviews.length} отзывов`
+                        : "нет отзывов"
+                    }
+                </span>
+            </span>
+
+            <span className="card__price">
+                {discount > 0
+                    ? <>
+                        {Math.ceil(price * ((100 + discount) / 100))} P
+                        {/* {setPrice({ price: price, discount: discount })} ₽ */}
+                        <del className="card__price_discount">{price} ₽</del>
+                    </>
+                    : price + " ₽"
+                }</span>
 
             <span className="card__buttons">
                 {inBasket
@@ -74,9 +103,14 @@ const Card = ({
                 }
 
                 <button
-                    className='card__btn'
+                    className="card__btn"
                     onClick={likeHandler}
-                >Like</button>
+                >
+                    {isLike
+                        ? <i className="lni lni-heart-fill" />
+                        : <i className="lni lni-heart" />
+                    }
+                </button>
             </span>
         </span>
     </Link>

@@ -15,7 +15,7 @@
 .card__content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem;
 }
 
@@ -24,33 +24,34 @@
     overflow: hidden;
 }
 .card__info {
-    /* display: flex; */
-    /* gap: 1rem; */
-    /* align-items: center; */
-    /* font-size: 1.8rem; */
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
 }
 .card__rate {
-    /* display: flex; */
-    /* gap: .4rem; */
-    /* align-items: center; */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 .card__rate_empty {
-    /* color: silver; */
+    color: rgb(244, 203, 203);
 }
 .card__review {
     /* color: silver; */
 }
 .card__price {
+    font-size: 2rem;
     font-weight: bold;
-    /* font-size: 2rem; */
-    /* display: flex; */
-    /* align-items: baseline; */
-    /* gap: 1rem; */
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
 }
 .card__price_discount {
     font-weight: normal;
-    font-size: 2rem;
-    /* color: silver; */
+    font-size: 1.7rem;
+    color: rgb(252, 117, 117);
 }
 .card__btn {
     border: none;
@@ -58,9 +59,9 @@
     padding: .7rem;
     opacity: .7;
     /* background-color: transparent; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 .card button:hover {
@@ -82,4 +83,61 @@
     background-color: rgb(252, 175, 58);
     /* width: 100%; */
     border-radius: 1rem;
+}
+.card__tag_toys {
+    /* background-color: olivedrab; */
+}
+.card__tag_delicious {
+    /* background-color: crimson; */
+}
+.card__tag_outerwear {
+    /* background-color: darkslateblue; */
+}
+.card .lni {
+    font-size: 1.3em;
+    /* color: rgb(252, 117, 117); */
+}
+.card__info .lni {
+    /* font-size: 1em; */
+}
+.card__discount {
+    /* position: absolute; */
+    /* top: 2rem; */
+    /* right: 3rem; */
+    /* background-color: red; */
+    /* z-index: 5; */
+    /* width: 6rem; */
+    /* height: 6rem; */
+    /* border-radius: 50%; */
+    /* color: #fff; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* box-shadow: 0 0 5px silver, 0 2px 15px white; */
+}
+.card_disabled::before {
+    /* content: ""; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* background-color: rgba(192, 192, 192, 0.7); */
+    /* z-index: 10; */
+}
+.card_disabled::after {
+    /* content: "Нет на складе"; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* z-index: 10; */
+    /* color: white; */
+    /* text-shadow: 0 0 5px black; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* font-size: 4rem; */
+    /* transform: rotate(45deg); */
 }
