@@ -55,6 +55,7 @@ const Card = ({
 
 
             <span className="card__info">
+
                 {reviews.length
                     ? <span className="card__rate">
                         <i className="lni lni-star-fill" />
@@ -64,8 +65,6 @@ const Card = ({
                         <i className="lni lni-star-fill" />
                     </span>
                 }
-
-
                 <span className="card__review">
                     {reviews.length > 0
                         ? `${reviews.length} отзывов`
@@ -103,7 +102,7 @@ const Card = ({
                 }
 
                 <button
-                    className="card__btn"
+                    className="card__btn like"
                     onClick={likeHandler}
                 >
                     {isLike

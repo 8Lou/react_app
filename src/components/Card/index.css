@@ -76,6 +76,9 @@
     /* background-color: ; */
     flex: 1;
 }
+.like {
+background-color: transparent; 
+}
 .card__tag {
     color:rgb(6, 6, 85);
     font-size: 2rem;
@@ -84,18 +87,9 @@
     /* width: 100%; */
     border-radius: 1rem;
 }
-.card__tag_toys {
-    /* background-color: olivedrab; */
-}
-.card__tag_delicious {
-    /* background-color: crimson; */
-}
-.card__tag_outerwear {
-    /* background-color: darkslateblue; */
-}
 .card .lni {
     font-size: 1.3em;
-    /* color: rgb(252, 117, 117); */
+    color: rgb(252, 117, 117);
 }
 .card__info .lni {
     /* font-size: 1em; */

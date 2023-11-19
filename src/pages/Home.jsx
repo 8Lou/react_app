@@ -11,7 +11,19 @@ import Card from "../components/Card";
 import goodsData from "../assets/data/goods.json";
 
 export function Home() {
+
     const { newsLenta } = useContext(MainCtx);
+
+    const favGoods = goodsData.filter(el => el.reviews.length !== 0).sort((a, b) => {
+        const aSum = a.reviews.reduce((acc, el) => acc + el.rating, 0) / a.reviews.length;
+        const bSum = b.reviews.reduce((acc, el) => acc + el.rating, 0) / b.reviews.length;
+        return bSum - aSum;
+    })
+
+    const newGoods = [...goodsData].sort((a, b) => {
+        return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    });
+
     return <>
         <Banner {...bannersData[2]} pattern={false} bgPos="70% 40%" />
 
@@ -19,8 +31,8 @@ export function Home() {
             <Adds {...addsData[0]} />
         </Layout>
 
-        {goodsData.length > 0 && <Layout mb={2} dt={4} title='New'>
-            {goodsData.map(el => <Card key={el._id} {...el} />)}
+        {newGoods.length > 0 && <Layout mb={2} dt={4} title='New'>
+            {newGoods.map(el => <Card key={el._id} {...el} />)}
         </Layout>}
 
         <Layout dt={2}>
@@ -28,8 +40,8 @@ export function Home() {
             <Adds {...addsData[2]} />
         </Layout>
 
-        {goodsData.length > 0 && <Layout mb={2} dt={4} title='Popular'>
-            {goodsData.map(el => <Card key={el._id} {...el} />)}
+        {favGoods.length > 0 && <Layout mb={2} dt={4} title='Popular'>
+            {favGoods.map(el => <Card key={el._id} {...el} />)}
         </Layout>}
 
         <Layout>
