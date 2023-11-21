@@ -1,5 +1,7 @@
+import Layout from "../components/Layout";
+
 export function SingleProduct() {
-    return <>
+    return <Layout>
         <h1>The product</h1>
-    </>
-}
+    </Layout>
+} 

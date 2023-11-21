@@ -1,5 +1,7 @@
+import Layout from "../components/Layout";
+
 export function About() {
-    return <>
-        <h1>About</h1>
-    </>
-}
+    return <Layout>
+        <h1>About us</h1>
+    </Layout>
+} 
