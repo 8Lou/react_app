@@ -16,6 +16,8 @@ import { useEffect, useState } from "react";
 import { Favorites } from "./pages/Favorites";
 
 import Api from "./Api";
+import Nav from "./components/Nav";
+import menu from './assets/data/menu.json'
 
 function App() {
 
@@ -46,25 +48,7 @@ function App() {
   return <Main.Provider value={mainCtx}>
 
     <Layout>
-
-      <ul className="menu">
-        <li><Link to='/'>Main</Link></li>
-        <li><Link to='/products'>Catalog</Link>
-          <ul>
-            <li><Link to='/products/category/delicious'>Food</Link></li>
-            <li><Link to='/products/category/toys'>Toys</Link></li>
-            <li><Link to='/products/favorites'>Favorites</Link></li>
-          </ul>
-        </li>
-        <li><Link to='/products/ball'>Ball</Link></li>
-        <li><Link to='/products/add'>Add product</Link></li>
-        <li><Link to='/basket'>Basket</Link></li>
-        <li><Link to='/profile'>Profile</Link></li>
-        <li><Link to='/auth'>Authorisation</Link></li>
-        <li><Link to='/delivery'>Delivery</Link></li>
-        <li><Link to='/about'>About us</Link></li>
-      </ul>
-      <span>{process.env.REACT_APP_USER_NAME}</span>
+      <Nav />
     </Layout>
     <Routes>
       <Route path="/" element={<Home />} />
