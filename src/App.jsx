@@ -48,7 +48,7 @@ function App() {
   return <Main.Provider value={mainCtx}>
 
     <Layout>
-      <Nav />
+      <Nav menu={menu.header} />
     </Layout>
     <Routes>
       <Route path="/" element={<Home />} />
